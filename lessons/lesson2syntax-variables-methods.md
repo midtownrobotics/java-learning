@@ -2,7 +2,7 @@
 
 ### Basic Java Syntax
 
-In general, syntax means "the arrangement of words and phrases to create well-formed sentences in a language". In programming, it's basically the same. "Syntax" is basically the rules and structure of the language. As you work more with Java, you will become increasingly familiar with its syntax, to the point where you won't even have to think about it. For now, here are some basic points:
+In general, syntax means "the arrangement of words and phrases to create well-formed sentences in a language". In programming, it's basically the same. "Syntax" is the rules and structure of the language. As you work more with Java, you will become increasingly familiar with its syntax, to the point where you won't even have to think about it. For now, here are some basic points:
 
 #### {} and Code blocks
 
@@ -27,6 +27,26 @@ int x = 5;
 int     y=        2;
 int z
 =3;
+```
+
+All of these will work without causing errors. However, there are conventions about how we use whitespace in Java. We will go into these more later, but for now:
+
+1. The code inside a code block is indented one more level (like the example above with ifs).
+2. Use single spaces to create some "breathing room" in your code, i.e. `int x = 5` rather than `int x=5`.
+3. Use empty lines to break code into related blocks (like paragraphs).
+
+```java
+int x1 = 5;
+int x2 = 3;
+int x3 = 6;
+
+int y1 = 2;
+int y2 = -1;
+int y3 = 10;
+
+int z1 = 0;
+int z2 = 3;
+int z3 = 120;
 ```
 
 #### Semi-Colons
@@ -58,7 +78,7 @@ Comments are **extremely important** (italics, large font, underlined, red lette
 A variable is a place for us to store data. This data could be anything from a number representing the current motor speed (255) to some text describing the current firmware version ("v0.12.29"). Java is a **strongly-typed language**. This means that each of our variables has to have a specific type, and that type cannot change. What are variable types?
 
 * `int` - This represents an integer, or whole number value. Valid: 2, 1000285, -16. Not valid: 0.6, 42949672960 (too big).
-* `double` - This represents a decimal number, like 0.6. Decimal numbers are known as "floating point" numbers; `double` stands for a double precision floating point number. Valid: 0.00001, 1284125927.27, -18257126.2.
+* `double` - This represents a decimal number, like 0.6. Decimal numbers are known as "floating point" numbers; "double" stands for a double precision floating point number. Valid: 0.00001, 1284125927.27, -18257126.2.
 * `boolean` - Boolean values can only be `TRUE` or `FALSE`.
 * `char` - represents a single character, like `A`.
 * `String` - represents a string of characters, like `"My name is Paul Dennis"`.
