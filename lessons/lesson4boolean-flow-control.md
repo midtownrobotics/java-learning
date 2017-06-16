@@ -1,4 +1,4 @@
-## Boolean Logic and Flow Control
+## Lesson 4 - Boolean Logic and Flow Control
 
 We discussed `boolean` values in Lesson 2. We can have boolean (TRUE or FALSE) variables.
 
