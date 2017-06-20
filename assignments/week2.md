@@ -14,6 +14,14 @@ The flow will look something like this:
  * Brake: this decreases the current speed of the car by 1mph
  * Print Info: print all the information about the car, i.e. its make, model, color, whether it's started and its current speed
 
+ **Note**: We haven't discussed arrays or collections yet. If you feel comfortable using them (with some help), feel free. This will allow you to have an arbitrarily large number of cars. For example, the user could have 2 cars or 20 cars, and your program would work the same. **Without using arrays or collections, you are limited to a fixed number of cars,** like so:
+
+ ```java
+ Car firstCar;
+ Car secondCar;
+ Car thirdCar;
+```
+
 Business rules:
 
 * A car cannot accelerate unless it's started
@@ -22,11 +30,11 @@ Business rules:
 * A car that's already started cannot be started again
 * A car that's already stopped cannot be stopped again
 
-Note: when I say "cannot" above, it means when the user tries to perform that action, you should display a message to them explaining why that action cannot be taken
+Note: when I say "cannot" above, it means when the user tries to perform that action, you should display a message to them explaining why that action cannot be taken.
 
 ### Extras
 
-Integrate polymorphism into this assignment. We haven't discussed polymorphism yet, but if you want to experiment, give it a shot. You will have three sub-classes that extend Car (as described below).
+Integrate polymorphism into this assignment. We haven't discussed polymorphism yet, but if you want to experiment, give it a shot.
 
 * Create three different sub-classes for the Car class:
  * MiniVan: this type of car is slow and only accelerates by 3mph when you accelerate
@@ -36,5 +44,5 @@ Integrate polymorphism into this assignment. We haven't discussed polymorphism y
 
 Integrate ascii animations into this assignment:
 
-* When a chooses to print information about their car, display an animation of a car moving across the screen
+* When a user chooses to print information about their car, display an animation of a car moving across the screen
 * Make this animation go faster or slower depending on the car's current speed at the time that the animation is displayed
