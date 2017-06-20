@@ -42,3 +42,71 @@ public static void main (String[] args) {
     Dog lassie = new Dog("Lassie", 5, 45.0);
 }
 ```
+
+This should look a little familiar and a little different. At the most basic level, we are declaring a new variable (`Dog myDog = <value>` just like `int x = <value>`). The value we are assigning here is more complex. The variables we've worked with in the past have been **simple types** (with the exception of String, which can behave like one).
+
+To create a new *instance* of our Dog class, we use the `new` keyword. This keyword tells Java to allocate memory for this complex object and calls the *constructor* that we defined above (`public Dog (String n, int a, double w)`).
+
+Now that we have these objects what can we do with them?
+
+### Dot Notation
+
+We can use "dot notation" to access their data and behaviors.
+
+```java
+//Charlie has gained weight:
+myDog.weight += 5.0;
+//Charlie has a last name
+myDog.name = "Charlie Dennis";
+myDog.bark(); //Prints "WOOF!"
+```
+
+The dot operator, `.` allows us to access any public methods and data of an object. It might help to think of the object as a folder that contains these values. The dot operator allows us to go into that "folder" similarly to how `/` allows us to go into real folders.
+
+#### IDE Usage
+
+All Java IDEs including Eclipse provide a lot of useful information. For example, anytime you have and object like `myDog` above, you can type `myDog.` and wait. The IDE will show you a list of all the public variables and methods that you have access to at that point. You can also use this feature to speed up your coding by allowing the IDE to do the typing for you. Some methods have really long names (like `getUndoPresentationName()`), and you might not want to have to type that out a lot.
+
+### `this` Keyword
+
+Another keyword in Java is `this`, which refers to the current object. It is often used (sometimes optionally) to **disambiguate**, which means effectively to make it clear what we're talking about. For example, if someone says "George Bush", they could be talking about George H.W. Bush, President 41, or George W. Bush, President 43.
+
+What does that look like in Java? Well, a common pattern in Java is to use the same variable names in the constructor as in the class. So instead of the constructor we used before:
+
+```java
+public Dog (String n, int a, double w) {
+    name = n;
+    age = a;
+    weight = w;
+}
+```
+
+The more common pattern is:
+
+```java
+public Dog (String name, int age, double weight) {
+    name = name;
+    age = age;
+    weight = weight;
+}
+```
+
+(Why is this better? Well, for one thing we know what "name", "age", and "weight" represent, but "n", "a", and "w" aren't as clear)
+
+But weight! I mean, wait! There's a problem. There are two variables floating around called "name". One of which is the parameter being passed to the constructor, and the other is the member variable "name". If we left our constructor as is, what would happen?** (See bottom for answer).
+
+We can use the `this` keyword to **disambiguate**, and make it clear that we want Java to set the class variable to the value that's being passed in.
+
+```java
+public Dog (String name, int age, double weight) {
+    this.name = name;
+    this.age = age;
+    this.weight = weight;
+}
+```
+
+** Answer: the code would compile but not have the intended effect. Java always looks for the "closest" variable it can find, so it will take the variable that's being passed in, "name", and assign it the value of the variable passed it.
+
+### `static` Keyword
+
+Now that we have 
