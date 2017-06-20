@@ -109,4 +109,37 @@ public Dog (String name, int age, double weight) {
 
 ### `static` Keyword
 
-Now that we have 
+Let's say that our program needs to keep track of computers. We will define a Computer class for this purpose.
+
+```java
+public class Computer {
+    double processingSpeed;
+    int ram;
+    boolean isLaptop;
+
+    public Computer (double processingSpeed, int ram, boolean isLaptop) {
+        this.processingSpeed = processingSpeed;
+        this.ram = ram;
+        this.isLaptop = isLaptop;
+    }
+}
+```
+
+Let's further assume that we need to keep track of the total number of computers "produced" (AKA how many times has the constructor been run). What if we added an `int computersCreated` variable, and incremented it in the constructor?
+
+```java
+boolean isLaptop;
+int computersCreated;
+
+public Computer (...) {
+    computersCreated++;
+}
+```
+
+Now every Computer object we create will have a variable called `computersCreated`. We could access it using dot notation: `myComputer.computersCreated`. But... just like each Dog above has its own name, weight, and age variables, each computer has its own values for its variables (isLaptop, processingSpeed, computersCreated). So every `computersCreated` value will be 1. Not very useful.
+
+Sometimes (like now) we need to keep track of information that is NOT tied to a specific instance of the class. Luckily, that's exactly what the `static` keyword does. If we declare the `computersCreated` variable to be static, that means it belongs to the Computers class in general, not any specific instance of the class. The dot notation access becomes different: we acces it through the class, like so: `Computer.computersCreated`. Static methods work similarly, and we'll discuss this concept more as we go on. For now, keep this definition in mind:
+
+Static: not associated with an instance of the class
+
+What are some other static variables that our computer class COULD use? Come up with 1-2 examples.
