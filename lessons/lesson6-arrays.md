@@ -65,7 +65,7 @@ int[] myFives = new int[100];
 Arrays.fill(myFives, 5);
 ```
 
-Preso manifesto, our array is full of fives. The Arrays class contains other useful methods - check it out!
+Presto manifesto, our array is full of fives. The Arrays class contains other useful methods - check it out!
 
 ### Final Thoughts
 
