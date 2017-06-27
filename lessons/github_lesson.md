@@ -1,7 +1,5 @@
 ## Git and GitHub
 
-UNFINISHED
-
 ### What is Version Control?
 
 Where do we store our code? If you store all your code locally (on your own machine) what happens if your computer crashes? How will you share the code you've written with other people on your team? E-mailing code snippets back and forth might work, but still doesn't solve the problem of where the code lives. What does solve this problem? Version control.
@@ -74,9 +72,11 @@ The pull command goes to your online GitHub repository and "pulls" any changes d
 
 Your basic "flow" will be to right some code, saving those changes as appropriate. Then you will need to add the changes, commit them, and push them up to the repo.
 
-`git add .
-git commit -m "Here are changes!"
-git push`
+`git add .`
+
+`git commit -m "Here are changes!"`
+
+`git push`
 
 ### Branching
 
