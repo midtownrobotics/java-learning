@@ -13,7 +13,9 @@ public class Main {
 }
 ```
 
-You should see that a `NumberFormatException` is thrown (assuming you did not enter a number). Exception handling allows us to decide what in this unexpected circumstance. In the example below, you will see that (if you do not enter a number) the line `System.out.println("You entered " + userNumber)` does not run. This is because as soon as the exception is thrown (in this case from the `Integer.parseInt(String)` call) the JVM will skip to the appropriate `catch` block (if one exists).
+You should see that a `NumberFormatException` is thrown (assuming you did not enter a number). Exception handling allows us to decide what in this unexpected circumstance.
+
+In the example below, you will see that (if you do not enter a number) the line `System.out.println("You entered " + userNumber)` does not run. This is because as soon as the exception is thrown (in this case from the `Integer.parseInt(String)` call) the JVM will skip to the appropriate `catch` block (if one exists).
 
 ```java
 public class Main {
@@ -54,7 +56,7 @@ It's possible to have `try/catch` blocks with multiple `catch` statements. We'll
 
 "FizzBuzz" is a common early programming challenge that you may have encountered before. The challenge is as follows: write a program that prints out the numbers 1-100, but if the number is divisible by three, print "Fizz" instead. If it's divisible by five, print "Buzz", and if it's divisible by both three and five print "FizzBuzz". Here is a standard solution for this problem for comparison.
 
-```java runnable
+```java
 public class FizzBuzzNoEx {
     public static void main(String[] args) {
         for (int index = 1; index <= 100; index++) {
@@ -83,7 +85,7 @@ class DivBy15 extends Exception {
 }
 ```
 
-```java runnable
+```java
 
 public class FizzBuzzExceptions {
 
@@ -109,7 +111,7 @@ public class FizzBuzzExceptions {
             } catch (DivBy5 ex) {
                 System.out.println("Buzz");
             } catch (Exception ex) {
-                System.out.println("Some other kind of exception occured.");
+                System.out.println("Some other kind of exception occurred.");
                 //This should never be called
             }
         }

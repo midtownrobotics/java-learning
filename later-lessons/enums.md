@@ -1,6 +1,6 @@
 ## Enumerations
 
-Let's say we are writing an Event class. Each Event occurs on a given day of the week, and we want to track that. What data type should we use? All of our existing data types have problems.
+Let's say we are writing a class to keep track of an Event (like a wedding, birthday party, etc). Each Event occurs on a given day of the week, and we want to track that. What data type should we use? All of our existing data types have problems.
 
 If we use a String, someone using our class can put whatever value they want in. We have to be concerned that they might use different capitalization or abbreviation ("Thurs" or "thursday" instead of the "Thursday" that we expect).
 
