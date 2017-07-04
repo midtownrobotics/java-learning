@@ -61,4 +61,4 @@ This is why you should make it a habit to only import things you need - use `.*`
 
 Hint: your IDE will help you out with imports in two ways. First, if you refer to something in regular Java packages that you haven't yet imported (like Scanner) it will suggest the possible imports, and you can confirm and add them automatically with a hotkey. In IntelliJ it's Alt-Enter.
 
-Second, if an import becomes unnecessary (maybe you thought you needed a Scanner and then decided on something else), the IDE will mark those as unused and grey them out. This is your queue to either get rid of the import statement or use it.
+Second, if an import becomes unnecessary (maybe you thought you needed a Scanner and then decided on something else), the IDE will mark those as unused and grey them out. This is your cue to either get rid of the import statement or use it.

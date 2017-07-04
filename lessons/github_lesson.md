@@ -46,7 +46,7 @@ Example: `git status`
 
 #### add/rm
 
-The "add" command tells git that we want to add the given files/changes to the current branch and keep track of them. You can use `git add <filename>` replacing the name of the file in question, or `git add .` will add all files. `rm` will remove files from the current branch.
+The "add" command tells git that we want to add the given files/changes to the current branch and keep track of them. You can use `git add <filename>`, or `git add .` will add all files. `rm` will remove files from the current branch.
 
 Example: `git add Car.java`
 

@@ -9,19 +9,19 @@ A class is a collection of **data** (AKA variables) and **behaviors** (AKA metho
 ```java
 public class Dog {
 
-    //Member variables 1
+    //Member variables, Note 1
     String name;
     int age;
     double weight;
 
-    //Constructor 3
+    //Constructor, Note 3
     public Dog (String n, int a, double w) {
         name = n;
         age = a;
         weight = w;
     }
 
-    //Member methods 2
+    //Member methods, Note 2
     public void bark () {
         System.out.println("WOOF!");
     }
