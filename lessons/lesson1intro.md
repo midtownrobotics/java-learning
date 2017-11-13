@@ -13,6 +13,7 @@ At the start of the build season we want you to:
 
 1. Have basic competency in Java
 2. Feel comfortable with basic uses of Git to store code
+======(If we have time - see schedule)=====
 3. Understand how the Java FRC code works, and be able to write code for the robot
 4. Feel comfortable with the process of loading code onto the robot
 
@@ -22,9 +23,33 @@ Some additional goals:
 2. Develop competency with sensors
 3. Improve the coding process; use good code conventions
 
-### Class Format
+### Class Format & Schedule
 
-The format of the class may change substantially. For now, we are meeting every Tuesday from 5pm to 8pm. We may need to consider additional meetings on Thursdays. The lecture materials (i.e. this file and others like it) will be posted to this repository: https://github.com/gradyrobotics/java-learning . 
+The format of the class may change substantially. We will be meeting Monday and Wednesdays from the start to the end of the build session (~4:45-6:30). We'll take a short break, but expect this class to occupy the whole session.
+
+Week 1: 11/13 and 11/15
+Monday - Lessons 1-4. Assignment 1, due 11/15. Read Lesson 4.2 at home.
+Wednesday - Review Lessons 2-4, Lesson 5. Assignment 2, due 11/29
+
+11/20 and 11/22 Closed for Thanksgiving Break
+
+Week 2: 11/27 and 11/29
+Monday - Review Assignment 2 & Lesson 5, Lesson 6. Assignment 2.1, due 11/29
+Wednesday - Lesson 7. Assignment 3, due 12/4.
+
+Week 3: 12/4 and 12/6
+Monday - Lesson 8 (Collections). No new HW (catch up on any previous)
+Wednesday - Lesson 9 (Unit Testing). Assignment 4, due 12/13.
+
+Week 4: 12/11 and 12/13
+Monday - Maze Hackathon?
+Wednesday - ""
+
+Week 5: 12/18 and 12/20
+Monday - Robot Sensors, PID Loops
+Wedsnesday - Code Deployment
+
+(After this, Winter Break, then build season starts)
 
 ### What is programming?
 
@@ -48,7 +73,7 @@ We'll discuss more principles of good programming as we go. For now, here are th
 
 ### First Program - "Hello World"
 
-Going forward, it's OK to copy-paste any code snippets (like the one below) in the lecture. Just for today, we're not going to do that. Open up Eclipse and create a new class called "Greeting". Add the following `main()` method and run the code.
+Going forward, it's OK to copy-paste any code snippets (like the one below) in the lecture. Just for today, we're not going to do that. Open up IntelliJ and create a new class called "Greeting". Add the following `main()` method and run the code.
 
 ```java
 public class Greeting {
@@ -68,7 +93,3 @@ Congratulations! You've written your first Java program. This might look incompr
 ### Java Keywords/Highlighting
 
 You have probably noticed that certain words (like `public`, `static`) appear differently in your IDE (bolded, in a different color). These are **reserved keywords** in Java. Every language has certain words that it reserves to only have very specific meanings. For example, the `class` keyword is only used to define a new class.
-
-## Assignment
-
-Go through the 2017 G3 Robotics repository and find one line of code that you now know something about. It's OK if you don't understand everything going on, but be prepared to explain what you do understand.

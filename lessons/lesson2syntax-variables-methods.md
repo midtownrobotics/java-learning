@@ -6,7 +6,7 @@ In general, syntax means "the arrangement of words and phrases to create well-fo
 
 #### {} and Code blocks
 
-Java uses C-style syntax, which originated with the C programming language. In particular, this means that we use braces `{}` to define **code blocks**. A code block is a group of statements. Code blocks can contain other code block, like so:
+Java uses C-style syntax, which originated with the [C programming language](https://en.wikipedia.org/wiki/C_(programming_language)). In particular, this means that we use braces `{}` to define **code blocks**. A code block is a group of statements. Code blocks can contain other code blocks, like so:
 
 ```java
 if (x == 5) {
@@ -18,9 +18,11 @@ if (x == 5) {
 }
 ```
 
+This is referred to as a "nested" block (think of Russian Nesting Dolls).
+
 #### Dynamic Whitespace
 
-Java supports a programming concept known as Dynamic Whitespace. This sounds very fancy, but it boils down to one simple thing: Java doesn't care how much "white space" you insert into your code (where whitespace is allowed).
+Java supports a programming concept known as **Dynamic Whitespace**. This sounds very fancy, but it boils down to one simple thing: Java doesn't care how much "white space" you insert into your code (where whitespace is allowed).
 
 ```java
 int x = 5;
@@ -64,7 +66,7 @@ All programming languages allow for "comments" in your code that are ignored by 
 that has multiple lines */
 ```
 
-The `//` will cause Java to ignore the rest of the line. The `/*` will ignore everything until it finds a closing `*/`.
+The [//](https://xkcd.com/156/) will cause Java to ignore the rest of the line. The `/*` will ignore everything until it finds a closing `*/`.
 
 Comments are **extremely important** (italics, large font, underlined, red letters). As we discussed, you are not writing code just for yourself, and even if you were, when you look back at your code in 6 months and have no idea what it does, you'll be wishing you had inserted some comments. In general, you should use comments whenever:
 
@@ -96,7 +98,7 @@ That's it! Our variable has been declared. This means that later in our program 
 myNumber = 5;
 ```
 
-It's possible (and often a good idea) to declare and initialize variables in one line, as you will see below. ALl variables have default values (for example, 0 for ints), but it is not good practice to rely on that.
+It's possible (and often a good idea) to declare and initialize variables in one line, as you will see below. All variables have default values (for example, 0 for ints), but it is not good practice to rely on that.
 
 Here are some examples of variable declaration and initialization.
 ```java

@@ -1,11 +1,8 @@
-## Week 1 Assignments
+## Assignment 1
 
-There are two assignments for Week 1:
+* Go through (some of) the 2017 G3 Robotics repository and find one line of code that you now know something about. It's OK if you don't understand everything going on, but be prepared to explain what you do understand. You do not need to read all of the code. Mark down what you found.
 
-* Go through (some of) the 2017 G3 Robotics repository and find one line of code that you now know something about. It's OK if you don't understand everything going on, but be prepared to explain what you do understand. You do not need to read all of the code.
-
-* Put your coding skills to work by creating an Ascii Animation. You will find some sample shapes below, which you can use if you want to. Your program should include:
-  * Functions other than `main()` and the utility functions
+* Put your coding skills to work by creating an Ascii Animation. You will find some sample shapes below, which you can use if you want to. Your program can include:
   * Some documentation (comments) that describe what's going on
   * Flow control elements (`while`, `if`, `for`)
 

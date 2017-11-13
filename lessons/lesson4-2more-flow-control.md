@@ -66,7 +66,7 @@ for (int i = 0; i < 10; i++) {
 
 ### Do-While
 
-We briefly discussed Do-While loops in class. They are not very commonly used, but it's still helpful to understand them. The difference between a `while` and a `do-while` loop is that a `while` loop checks the condition at the beginning and a `do-while` checks at the end. In practice, this means that the code in a `do-while` loop will always run at least once.
+Do-while loops are not very commonly used, but it's still helpful to understand them. The difference between a `while` and a `do-while` loop is that a `while` loop checks the condition at the beginning and a `do-while` checks at the end. In practice, this means that the code in a `do-while` loop will always run at least once.
 
 ```java
 int x;
