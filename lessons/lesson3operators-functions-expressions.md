@@ -23,7 +23,7 @@ int remainder = 12958 % 3;
 
 Arithmetic operators return (result in) a number.
 
-#### Assignment/Increment Operators
+#### Assignment Update Operators
 
 We already discussed `=` above. There are some additional assignment operators that effectively provide shortcuts. For example, the `+=` operator.
 
@@ -90,7 +90,7 @@ public Cake bakeCake (flour, sugar, eggs, butter) {
 }
 ```
 
-"Pseudo code" (pronounced "sudo") is a way of brainstorming and laying out ideas. Basically, pseudo code lets us forget worrying about the syntax of the language. In this case, we have defined (in pseudo code only! this is not working Java code) a function that accepts arguments (flour, sugar, eggs, butter) and returns a cake. Let's look at a real example:
+"Pseudo code" (pronounced "sudo") is a way of brainstorming and laying out ideas. Basically, pseudo code lets us forget worrying about the syntax of the language. In this case, we have defined (in pseudo code only! this is not working Java code) a function that accepts arguments (flour, sugar, eggs, butter) and returns a cake. Let's look at a real example of a function in Java.
 
 ```java
 public static int addTwoNumbers (int x, int y) {
@@ -129,7 +129,7 @@ Here, the return type is `void`, which means we don't return anything. Also, as 
 
 ### Expressions
 
-An expression is a combination of variables/constants, operators, and function calls that produce a value. Let's look at an example: `5 - 3` is an expression. It combines two constant values (5 and 3) and the `-` operator. When the expression is **evaluated**, the value it returns is 2. Expressions can be much more complex than that, and can contain other expressions.
+An expression is a combination of variables/constants, operators, and function calls that produce a value. Let's look at an example: `5 - 3` is an expression. It combines two constant values (5 and 3) and the `-` (minus) operator. When the expression is **evaluated**, the value it returns is 2. Expressions can be much more complex than that, and can contain other expressions.
 
 ```java
 int y = 4;
