@@ -2,34 +2,6 @@
 
 There are a few other elements of boolean logic and flow control that we didn't get to in class. This lesson will go over those.
 
-### ! and !=
-
-Sometimes when working with boolean variables we want to use the "opposite" value. Java uses `!` (exclamation mark) as the `NOT` operator.
-
-```java
-boolean hasPants;
-boolean hasShirt;
-
-//Later:
-if (!hasPants) { //This can be read as if NOT hasPants, or if hasPants is false
-  System.out.println("Dude you need to put on some pants!");
-}
-
-if (!(hasPants || hasShirt)) {
-  System.out.println("Wearing neither pants nor shirt. Tisk tisk");
-}
-```
-
-You can also use the `!=` operator to check if something is NOT equal.
-
-```java
-int x;
-if (x != 5) {
-  System.out.println("X isn't five. I'm not sure what it is.");
-  System.out.println("But definitely not five.");
-}
-```
-
 ### Break and Continue
 
 Java has two additional keywords that help us control the flow of our program: `break` and `continue`. These keywords stand alone (much like the cheese) as their own statement. Both statements can only be used inside loops or switch/case statements (covered later in the lesson).
@@ -116,3 +88,53 @@ if (dayOfWeek.equals("Monday")) { //.equals is how we compare Strings
 One difference between switch/case and if/else if structures is that multiple case statements can be executed. Think of the colons `:` as a fence. Once a switch/case statement makes a "match", it will "jump the fence" and start executing statements until it hits a `break` statement. This could potentially run through multiple other cases.
 
 In general, switch/case is a more organized way to structure something you previously would have use if/else if/else for - just don't forget the `break` statements (unless that's your intention).
+
+### ! and !=
+
+Sometimes when working with boolean variables we want to use the "opposite" value. Java uses `!` (exclamation mark) as the `NOT` operator.
+
+```java
+boolean hasPants;
+boolean hasShirt;
+
+//Later:
+if (!hasPants) { //This can be read as if NOT hasPants, or if hasPants is false
+  System.out.println("Dude you need to put on some pants!");
+}
+
+if (!(hasPants || hasShirt)) {
+  System.out.println("Wearing neither pants nor shirt. Tisk tisk");
+}
+```
+
+You can also use the `!=` operator to check if something is NOT equal.
+
+```java
+int x;
+if (x != 5) {
+  System.out.println("X isn't five. I'm not sure what it is.");
+  System.out.println("But definitely not five.");
+}
+```
+
+### && and || (AND and OR)
+
+In boolean logic we want to be able to test two values together to see if they are both true. In Java we use the double ampersand `&&`, or AND operator.
+
+```java
+boolean flag = false;
+int value = 6;
+if (value > 3 && flag) {
+  //Statement
+}
+```
+
+The && operator will return true **if and only if** both things are true. (`value` must be greater than 3 and `flag` must be `true`).
+
+In other cases we might want to take an action if one thing or the other is true.
+
+```java
+if (leftMotor > 0 || rightMotor > 0) {
+  System.out.println("Robot is in motion");
+}
+```
